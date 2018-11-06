@@ -11,6 +11,9 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+
+	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+	wp_enqueue_style('google-fonts','https://fonts.googleapis.com/css?family=Lora:400,700|Ubuntu:400,700&amp;subset=latin-ext');
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
@@ -18,6 +21,8 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_script('comment-reply');
     }
 }, 100);
+
+
 
 /**
  * Theme setup
@@ -44,7 +49,10 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'primary_left_nav' => __('Primary Left Navigation', 'sanlucar'),
+        'primary_right_nav' => __('Primary Right Navigation', 'sanlucar'),
+        'footer_nav' => __('Footer Navigation', 'sanlucar')
     ]);
 
     /**

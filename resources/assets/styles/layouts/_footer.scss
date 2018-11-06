@@ -1,0 +1,31 @@
+footer {
+  color: $brand-primary;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  background-color: #fff;
+
+  @media (max-width: $screen-lg) {
+    height: 130px;
+  }
+
+  .social_links {
+    margin: 2em auto;
+  }
+
+  .nav .menu-item a {
+    color: $brand-primary;
+    font-weight: bold;
+  }
+
+  #menu-footer-nav {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    .menu-item {
+      display: inline-block;
+    }
+  }
+}

@@ -5,3 +5,66 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.navbar {
+  background-color: $brand-primary;
+  height: 75px;
+
+  @media (max-width: $screen-md-max) {
+    height: auto;
+  }
+}
+
+.nav {
+  &.navbar {
+    background-color: $brand-primary;
+  }
+
+  .menu-item {
+    a {
+      color: #fff;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.brand-wrapper {
+  position: relative;
+  top: 35px;
+  z-index: 9;
+
+  @media (max-width: $screen-md-max) {
+    top: 0;
+  }
+}
+
+.search-form-container {
+  text-align: right;
+  position: absolute;
+  width: 300px;
+  overflow: hidden;
+  background: #fff;
+  right: 60px;
+  top: 0;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+
+  &.hdn {
+    width: 0;
+  }
+
+  .search-input-group {
+    width: 300px;
+  }
+}
+
+.navbar-toggler {
+  top: 1em;
+  right: 1em;
+}
