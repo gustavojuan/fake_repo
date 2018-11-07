@@ -4,19 +4,19 @@
 
       <div class="col-12">
         <ul class="social_links text-center m-0 p-0">
-          <li class="d-md-inline list-unstyled"><a href="" class="social">
+          <li class="d-inline list-unstyled"><a href="" class="social">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </li>
-          <li class="d-md-inline list-unstyled"><a href="" class="social">
+          <li class="d-inline list-unstyled"><a href="" class="social">
               <i class="fab fa-facebook-f"></i>
             </a>
           </li>
-          <li class="d-md-inline list-unstyled"><a href="" class="social">
+          <li class="d-inline list-unstyled"><a href="" class="social">
               <i class="fab fa-youtube"></i>
             </a>
           </li>
-          <li class="d-md-inline list-unstyled"><a href="" class="social">
+          <li class="d-inline list-unstyled"><a href="" class="social">
               <i class="fab fa-instagram"></i>
             </a>
           </li>

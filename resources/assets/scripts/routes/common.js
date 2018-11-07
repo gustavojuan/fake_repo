@@ -1,6 +1,8 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
+
+
       $('#search-button').on('click', function(e) {
           if($('#search-input-container').hasClass('hdn')) {
               e.preventDefault();
@@ -14,6 +16,8 @@ export default {
           $('#search-input-container').addClass('hdn')
           return false;
       });
+
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

@@ -2,6 +2,38 @@
   overflow: hidden;
 }
 
+.page_bg {
+  background-size: cover;
+  background-position: center;
+
+  .blank_bg {
+    background-color: #fff;
+    padding-top: 5em;
+
+    h1 {
+      font-family: $font-serif;
+      color: $brand-primary;
+      font-weight: bold;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
 .wrap {
   padding: 0;
 }
@@ -53,5 +85,12 @@
         }
       }
     }
+  }
+}
+
+#mision-vision-werte {
+  .img_icon {
+    margin-bottom: 0.5em;
+    width: 90px;
   }
 }
