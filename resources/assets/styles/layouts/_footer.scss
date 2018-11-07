@@ -4,13 +4,62 @@ footer {
   font-weight: bold;
   overflow: hidden;
   background-color: #fff;
+  margin-top: 30px;
 
   @media (max-width: $screen-lg) {
     height: 130px;
   }
 
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   .social_links {
-    margin: 2em auto;
+    margin-bottom: 15px !important;
+
+    &::after {
+      content: "";
+      height: 5px;
+      width: 40%;
+      position: absolute;
+      top: 12px;
+      min-width: 150px;
+      z-index: 1;
+      background-color: $brand-primary;
+      left: 0;
+    }
+
+    &::before {
+      content: "";
+      height: 5px;
+      width: 40%;
+      position: absolute;
+      top: 12px;
+      min-width: 150px;
+      z-index: 1;
+      background-color: $brand-primary;
+      right: 0;
+    }
+
+    .social {
+      width: 30px;
+      height: 30px;
+      background-color: $brand-primary;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+
+      i {
+        color: #fff;
+        top: 4px;
+        position: relative;
+      }
+    }
   }
 
   .nav .menu-item a {

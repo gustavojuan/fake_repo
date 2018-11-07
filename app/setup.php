@@ -14,8 +14,12 @@ add_action('wp_enqueue_scripts', function () {
 
 	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 	wp_enqueue_style('google-fonts','https://fonts.googleapis.com/css?family=Lora:400,700|Ubuntu:400,700&amp;subset=latin-ext');
+	wp_enqueue_style('slick.css','https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+	wp_register_script( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', null, null, true );
+	wp_enqueue_script('slick');
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
