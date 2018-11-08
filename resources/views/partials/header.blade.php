@@ -1,16 +1,17 @@
 <header class="banner">
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
-            @if (has_nav_menu('primary_left_nav'))
-                {!! wp_nav_menu([
-                    'theme_location' => 'primary_left_nav',
-                    'menu_class' => 'nav',
-                    'container_class'=>'ml-auto test',
-                    'fallback_cb'     => 'bs4navwalker::fallback',
-                    'walker' => new bs4Navwalker(),
-                    'depth'           => 2,
-                    ]) !!}
-            @endif
+          <?php
+	        $args = array(
+		        'theme_location' => 'primary_left_nav',
+		        'depth' => 0,
+		        'container_class'=>'ml-auto test',
+		        'menu_class'  => 'nav',
+		        'walker'  => new BootstrapNavMenuWalker()
+	        );
+	        wp_nav_menu($args);
+	        ?>
+
         </div>
 
         <div class="mx-auto my-2 order-0 order-md-1 position-relative brand-wrapper" >
@@ -50,30 +51,30 @@
         <div class="dropdown show navbar-right float-right">
 
 
-            <?php
-	            $languages = icl_get_languages('skip_missing=0&orderby=code');
-	            $custom_languages = [];
-	            foreach ($languages as  $l){
-	            	if(!$l['active']){
-			            array_push($custom_languages,$l);
-                    }else{
-			            $custom_languages[0] = $l;
-                    }
-                }
-            ?>
+			<?php
+			$languages = icl_get_languages('skip_missing=0&orderby=code');
+			$custom_languages = [];
+			foreach ($languages as  $l){
+				if(!$l['active']){
+					array_push($custom_languages,$l);
+				}else{
+					$custom_languages[0] = $l;
+				}
+			}
+			?>
             <a class="dropdown-toggle text-uppercase" href="<?=$custom_languages[0]['url']?>" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <?= substr($custom_languages[0]['native_name'],0,2)?>
+				<?= substr($custom_languages[0]['native_name'],0,2)?>
             </a>
 
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-              <?php
-                foreach ($custom_languages as $key => $language){
-	                if ($key > 0){
+				<?php
+				foreach ($custom_languages as $key => $language){
+					if ($key > 0){
 
-                        echo '<a class="dropdown-item" href="'.$language['url'].'">'.$language['native_name'].'<img class="ml-3 rounded-circle" src="'.$language['country_flag_url'].'" width="30" height="30"></a>';
-                    }
-                }
-              ?>
+						echo '<a class="dropdown-item" href="'.$language['url'].'">'.$language['native_name'].'<img class="ml-3 rounded-circle" src="'.$language['country_flag_url'].'" width="30" height="30"></a>';
+					}
+				}
+				?>
             </div>
         </div>
     </div>

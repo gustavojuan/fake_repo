@@ -1,222 +1,139 @@
 <?php
 
 /**
- * Class Name: bs4Navwalker
- * GitHub URI: https://github.com/dupkey/bs4navwalker
- * Description: A custom WordPress nav walker class for Bootstrap 4 nav menus in a custom theme using the WordPress built in menu manager.
- * License: GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+ * Extended Walker class for use with the Bootstrap 4 Dropdown menus in Wordpress.
+ * Edited to support n-levels submenu and a Mega Menu.
+ * @author @jaycbrf4
+ * @license CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
  */
-
-class bs4Navwalker extends Walker_Nav_Menu
+class BootstrapNavMenuWalker extends Walker_Nav_Menu
 {
 	/**
-	 * Starts the list before the elements are added.
+	 * Start Level
 	 *
-	 * @see Walker::start_lvl()
-	 *
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param int    $depth  Depth of menu item. Used for padding.
-	 * @param array  $args   An array of arguments. @see wp_nav_menu()
 	 */
-	public function start_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat("\t", $depth);
-		$output .= "\n$indent<div class=\"dropdown-menu\">\n";
+	function start_lvl( &$output, $depth = 0, $args = array() )
+	{
+		$indent = str_repeat( "\t", $depth );
+		$submenu = ($depth > 0) ? ' sub-menu' : '';
+		$output	.= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
 	}
 
 	/**
-	 * Ends the list of after the elements are added.
+	 * Start Element
 	 *
-	 * @see Walker::end_lvl()
-	 *
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param int    $depth  Depth of menu item. Used for padding.
-	 * @param array  $args   An array of arguments. @see wp_nav_menu()
 	 */
-	public function end_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat("\t", $depth);
-		$output .= "$indent</div>\n";
-	}
-
-	/**
-	 * Start the element output.
-	 *
-	 * @see Walker::start_el()
-	 *
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param object $item   Menu item data object.
-	 * @param int    $depth  Depth of menu item. Used for padding.
-	 * @param array  $args   An array of arguments. @see wp_nav_menu()
-	 * @param int    $id     Current item ID.
-	 */
-	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 )
+	{
+		$indent         = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+		$li_attributes  = '';
+		$class_names    = $value = '';
+		$hasMegaMenu    = is_active_sidebar( 'mega-menu-item-' . $item->ID );
 
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-		$classes[] = 'menu-item-' . $item->ID;
 
-		/**
-		 * Filter the CSS class(es) applied to a menu item's list item element.
-		 *
-		 * @since 3.0.0
-		 * @since 4.1.0 The `$depth` parameter was added.
-		 *
-		 * @param array  $classes The CSS classes that are applied to the menu item's `<li>` element.
-		 * @param object $item    The current menu item.
-		 * @param array  $args    An array of {@see wp_nav_menu()} arguments.
-		 * @param int    $depth   Depth of menu item. Used for padding.
-		 */
-		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args, $depth ) );
+		// managing divider: add divider class to an element to get a divider before it.
+		$divider_class_position = array_search('divider', $classes);
 
-		// New
-		$class_names .= ' nav-item';
-
-		if (in_array('menu-item-has-children', $classes)) {
-			$class_names .= ' dropdown';
+		if($divider_class_position !== false)
+		{
+			$output .= "<li class=\"divider\"></li>\n";
+			unset($classes[$divider_class_position]);
 		}
 
-		if (in_array('current-menu-item', $classes)) {
-			$class_names .= ' active';
-		}
-		//
+		$classes[] = ($args->has_children || $hasMegaMenu) ? 'dropdown' : '';
+		$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
+		$classes[] = 'nav-item-' . $item->ID;
 
-		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
-
-		// print_r($class_names);
-
-		/**
-		 * Filter the ID applied to a menu item's list item element.
-		 *
-		 * @since 3.0.1
-		 * @since 4.1.0 The `$depth` parameter was added.
-		 *
-		 * @param string $menu_id The ID that is applied to the menu item's `<li>` element.
-		 * @param object $item    The current menu item.
-		 * @param array  $args    An array of {@see wp_nav_menu()} arguments.
-		 * @param int    $depth   Depth of menu item. Used for padding.
-		 */
-		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
-		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
-
-		// New
-		if ($depth === 0) {
-			$output .= $indent . '<li' . $id . $class_names .'>';
-		}
-		//
-
-		// $output .= $indent . '<li' . $id . $class_names .'>';
-
-		$atts = array();
-		$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
-		$atts['target'] = ! empty( $item->target )     ? $item->target     : '';
-		$atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
-		$atts['href']   = ! empty( $item->url )        ? $item->url        : '';
-
-		// New
-		if ($depth === 0) {
-			$atts['class'] = 'nav-link';
+		if($depth && $args->has_children)
+		{
+			$classes[] = 'dropdown-submenu';
 		}
 
-		if ($depth === 0 && in_array('menu-item-has-children', $classes)) {
-			$atts['class']       .= ' dropdown-toggle';
-			$atts['data-toggle']  = 'dropdown';
-		}
+		$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+		$class_names = ' class="nav-item ' . esc_attr( $class_names ) . '"';
 
-		if ($depth > 0) {
-			$manual_class = array_values($classes)[0] .' '. 'dropdown-item';
-			$atts ['class']= $manual_class;
-		}
+		$id = apply_filters( 'nav_menu_item_id', 'nav-item-'. $item->ID, $item, $args );
+		$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		if (in_array('current-menu-item', $item->classes)) {
-			$atts['class'] .= ' active';
-		}
-		// print_r($item);
-		//
+		$output .= $indent . '<li' . $id . $value . $class_names . $li_attributes . '>';
 
-		/**
-		 * Filter the HTML attributes applied to a menu item's anchor element.
-		 *
-		 * @since 3.6.0
-		 * @since 4.1.0 The `$depth` parameter was added.
-		 *
-		 * @param array $atts {
-		 *     The HTML attributes applied to the menu item's `<a>` element, empty strings are ignored.
-		 *
-		 *     @type string $title  Title attribute.
-		 *     @type string $target Target attribute.
-		 *     @type string $rel    The rel attribute.
-		 *     @type string $href   The href attribute.
-		 * }
-		 * @param object $item  The current menu item.
-		 * @param array  $args  An array of {@see wp_nav_menu()} arguments.
-		 * @param int    $depth Depth of menu item. Used for padding.
-		 */
-		$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
-
-		$attributes = '';
-		foreach ( $atts as $attr => $value ) {
-			if ( ! empty( $value ) ) {
-				$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
-				$attributes .= ' ' . $attr . '="' . $value . '"';
-			}
-		}
+		$attributes = ! empty( $item->attr_title ) ? ' title="' . esc_attr( $item->attr_title ) .'"' : '';
+		$attributes .= ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) .'"' : '';
+		$attributes .= ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) .'"' : '';
+		$attributes .= ! empty( $item->url ) ? ' href="' . esc_attr( $item->url ) .'"' : '';
+		$attributes .= ($args->has_children || $hasMegaMenu) ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
 
 		$item_output = $args->before;
-		// New
-		/*
-		if ($depth === 0 && in_array('menu-item-has-children', $classes)) {
-			$item_output .= '<a class="nav-link dropdown-toggle"' . $attributes .'data-toggle="dropdown">';
-		} elseif ($depth === 0) {
-			$item_output .= '<a class="nav-link"' . $attributes .'>';
-		} else {
-			$item_output .= '<a class="dropdown-item"' . $attributes .'>';
-		}
-		*/
-		//
 		$item_output .= '<a'. $attributes .'>';
-		/** This filter is documented in wp-includes/post-template.php */
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		$item_output .= '</a>';
+		$item_output .= (($depth == 0 || 1) && ($args->has_children || $hasMegaMenu)) ? ' <b class="caret"></b></a>' : '</a>';
 		$item_output .= $args->after;
 
-		/**
-		 * Filter a menu item's starting output.
-		 *
-		 * The menu item's starting output only includes `$args->before`, the opening `<a>`,
-		 * the menu item's title, the closing `</a>`, and `$args->after`. Currently, there is
-		 * no filter for modifying the opening and closing `<li>` for a menu item.
-		 *
-		 * @since 3.0.0
-		 *
-		 * @param string $item_output The menu item's starting HTML output.
-		 * @param object $item        Menu item data object.
-		 * @param int    $depth       Depth of menu item. Used for padding.
-		 * @param array  $args        An array of {@see wp_nav_menu()} arguments.
-		 */
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+
+		if ($hasMegaMenu)
+		{
+			$output .= "<ul id=\"mega-menu-{$item->ID}\" class=\"mega-menu-wrapper dropdown-menu depth_".$depth."\">";
+			ob_start();
+			dynamic_sidebar( 'mega-menu-item-' . $item->ID );
+			$dynamicSidebar = ob_get_contents();
+			ob_end_clean();
+			$output .=  $dynamicSidebar;
+			$output .= "</ul>";
+		}
 	}
 
 	/**
-	 * Ends the element output, if needed.
+	 * Display Element
 	 *
-	 * @see Walker::end_el()
-	 *
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param object $item   Page data object. Not used.
-	 * @param int    $depth  Depth of page. Not Used.
-	 * @param array  $args   An array of arguments. @see wp_nav_menu()
 	 */
-	public function end_el( &$output, $item, $depth = 0, $args = array() ) {
-		if ($depth === 0) {
-			$output .= "</li>\n";
+	function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output )
+	{
+		//v($element);
+		if ( !$element )
+			return;
+
+		$id_field = $this->db_fields['id'];
+
+		//display this element
+		if ( is_array( $args[0] ) )
+			$args[0]['has_children'] = ! empty( $children_elements[$element->$id_field] );
+		else if ( is_object( $args[0] ) )
+			$args[0]->has_children = ! empty( $children_elements[$element->$id_field] );
+		$cb_args = array_merge( array(&$output, $element, $depth), $args);
+		call_user_func_array(array(&$this, 'start_el'), $cb_args);
+
+		$id = $element->$id_field;
+
+		// descend only when the depth is right and there are childrens for this element
+		if ( ($max_depth == 0 || $max_depth > $depth+1 ) && isset( $children_elements[$id]) )
+		{
+			foreach( $children_elements[ $id ] as $child )
+			{
+				if ( !isset($newlevel) )
+				{
+					$newlevel = true;
+					//start the child delimiter
+					$cb_args = array_merge( array(&$output, $depth), $args);
+					call_user_func_array(array(&$this, 'start_lvl'), $cb_args);
+				}
+
+				$this->display_element( $child, $children_elements, $max_depth, $depth + 1, $args, $output );
+			}
+
+			unset( $children_elements[ $id ] );
 		}
+
+		if ( isset($newlevel) && $newlevel )
+		{
+			//end the child delimiter
+			$cb_args = array_merge( array(&$output, $depth), $args);
+			call_user_func_array(array(&$this, 'end_lvl'), $cb_args);
+		}
+
+		//end this element
+		$cb_args = array_merge( array(&$output, $element, $depth), $args);
+		call_user_func_array(array(&$this, 'end_el'), $cb_args);
 	}
 }

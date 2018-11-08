@@ -52,7 +52,7 @@ add_action('after_setup_theme', function () {
      * Register navigation menus
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
-	require_once('bs4navwalker.php');
+	require_once('bs4Navwalker.php');
 
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
@@ -61,6 +61,27 @@ add_action('after_setup_theme', function () {
         'footer_nav' => __('Footer Navigation', 'sanlucar')
     ]);
 
+	//register MegaMenu widget if the Mega Menu is set as the menu location
+	$location = 'mega_menu';
+	$css_class = 'mega-menu-parent';
+	$locations = get_nav_menu_locations();
+	if ( isset( $locations[ $location ] ) ) {
+		$menu = get_term( $locations[ $location ], 'nav_menu' );
+		if ( $items = wp_get_nav_menu_items( $menu->name ) ) {
+			foreach ( $items as $item ) {
+				if ( in_array( $css_class, $item->classes ) ) {
+					register_sidebar( array(
+						'id'   => 'mega-menu-item-' . $item->ID,
+						'description' => 'Mega Menu items',
+						'name' => $item->title . ' - Mega Menu',
+						'before_widget' => '<li id="%1$s" class="mega-menu-item">',
+						'after_widget' => '</li>',
+
+					));
+				}
+			}
+		}
+	}
     /**
      * Enable post thumbnails
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
