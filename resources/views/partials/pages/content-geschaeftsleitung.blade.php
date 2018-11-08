@@ -1,4 +1,4 @@
-<p class="mb-4 mb-md-0"><?php _e("Seit Anfang 2018 haben die beiden Gründer Stephan Rötzer und Jorge Peris die Führung des Unternehmens in die Hände eines breit aufgestellten Leadership Teams gelegt, das vom CEO Michael Brinkmann geführt wird.","sanlucar")?></p>
+<p class="mb-4"><?php _e("Seit Anfang 2018 haben die beiden Gründer Stephan Rötzer und Jorge Peris die Führung des Unternehmens in die Hände eines breit aufgestellten Leadership Teams gelegt, das vom CEO Michael Brinkmann geführt wird.","sanlucar")?></p>
 <div class="row">
     <div class="col-12">
         <div class="row">

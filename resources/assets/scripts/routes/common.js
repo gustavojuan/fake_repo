@@ -1,6 +1,9 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
+      console.log("init");
+
+      $('.image-link').magnificPopup({type:'image'});
 
 
       $('#search-button').on('click', function(e) {
@@ -21,14 +24,15 @@ export default {
 
       $('#headquarters_map area').on('click', function (e) {
           e.preventDefault();
-
-          console.log('asdasd');
           console.log($(this));
       })
+
+
 
 
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+      console.log("finalize");
   },
 };
