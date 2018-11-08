@@ -10,6 +10,10 @@
     background-color: #fff;
     padding-top: 5em;
 
+    @media (max-width: $screen-md-max) {
+      padding-top: 1em;
+    }
+
     h1 {
       font-family: $font-serif;
       color: $brand-primary;
@@ -30,6 +34,24 @@
 
     p {
       font-size: 12px;
+    }
+
+    blockquote {
+      font-size: 12px;
+    }
+
+    figure {
+      max-height: 280px;
+      height: 280px;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

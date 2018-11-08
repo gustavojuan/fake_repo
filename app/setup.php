@@ -52,6 +52,8 @@ add_action('after_setup_theme', function () {
      * Register navigation menus
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
+	require_once('bs4navwalker.php');
+
     register_nav_menus([
         'primary_navigation' => __('Primary Navigation', 'sage'),
         'primary_left_nav' => __('Primary Left Navigation', 'sanlucar'),

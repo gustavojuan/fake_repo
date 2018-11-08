@@ -17,6 +17,15 @@ export default {
           return false;
       });
 
+      $('#headquarters_map').imageMapResize();
+
+      $('#headquarters_map area').on('click', function (e) {
+          e.preventDefault();
+
+          console.log('asdasd');
+          console.log($(this));
+      })
+
 
   },
   finalize() {

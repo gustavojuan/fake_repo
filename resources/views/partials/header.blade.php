@@ -2,7 +2,14 @@
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
             @if (has_nav_menu('primary_left_nav'))
-                {!! wp_nav_menu(['theme_location' => 'primary_left_nav', 'menu_class' => 'nav','container_class'=>'ml-auto']) !!}
+                {!! wp_nav_menu([
+                    'theme_location' => 'primary_left_nav',
+                    'menu_class' => 'nav',
+                    'container_class'=>'ml-auto test',
+                    'fallback_cb'     => 'bs4navwalker::fallback',
+                    'walker' => new bs4Navwalker(),
+                    'depth'           => 2,
+                    ]) !!}
             @endif
         </div>
 
