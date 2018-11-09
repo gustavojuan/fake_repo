@@ -29,7 +29,7 @@
       font-weight: bold;
 
       &.big {
-        margin-bottom: 150px;
+        margin-bottom: 60px;
       }
     }
 
@@ -157,5 +157,87 @@
   .img_icon {
     margin-bottom: 0.5em;
     width: 90px;
+  }
+}
+
+#timeline {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    min-height: 100%;
+    width: 3px;
+    background-color: #202255;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -50px;
+
+    @media (max-width: $screen-sm-max) {
+      display: none;
+    }
+  }
+
+  > .row {
+    background-image: url("../../images/css/timeline_odd.png");
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    background-size: 95%;
+    margin-bottom: 150px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      background-image: none;
+    }
+
+    img {
+      position: absolute;
+      top: calc(-50% + 36px);
+
+      @media (max-width: $screen-md-max) {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &:nth-child(odd) {
+      img {
+        left: 0;
+
+        @media (max-width: $screen-md-max) {
+          top: 0;
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      img {
+        right: 0;
+        top: calc(-30%);
+
+        @media (max-width: $screen-md-max) {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  h3.year {
+    position: relative;
+    top: -18px;
+    font-size: 25px;
+
+    @media (max-width: $screen-md-max) {
+      top: 0;
+    }
   }
 }

@@ -61,6 +61,10 @@ header {
       color: #fff;
       font-size: 11px;
       text-transform: uppercase;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
 
     @media (max-width: $screen-sm-max) {

@@ -24,9 +24,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
-            @if (has_nav_menu('primary_right_nav'))
-                {!! wp_nav_menu(['theme_location' => 'primary_right_nav', 'menu_class' => 'nav']) !!}
-            @endif
+	        <?php
+	        $args = array(
+		        'theme_location' => 'primary_right_nav',
+		        'depth' => 0,
+		        'container_class'=>'mr-auto test',
+		        'menu_class'  => 'nav',
+		        'walker'  => new BootstrapNavMenuWalker()
+	        );
+	        wp_nav_menu($args);
+	        ?>
         </div>
 
 

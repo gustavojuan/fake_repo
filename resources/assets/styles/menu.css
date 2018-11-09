@@ -1,3 +1,9 @@
+.navbar li,
+.navbar a {
+  display: inline-block;
+  text-align: left;
+}
+
 .navbar .container {
   position: relative;
 }
@@ -6,6 +12,14 @@
 .navbar .collapse,
 .navbar-nav li {
   position: static;
+}
+
+.nav .menu-item a {
+  letter-spacing: 0.4px;
+}
+
+.nav .menu-item a:hover {
+  letter-spacing: 0;
 }
 
 .menu-item-has-children,
@@ -20,11 +34,10 @@
 @media (min-width: 767px) {
   .dropdown > .dropdown-menu {
     position: absolute;
-    top: 100%;
-    left: auto;
+    top: 0;
+    left: 0;
     z-index: 1000;
     float: none;
-    padding: 1rem;
     list-style: none;
     border: none;
     border-radius: 0;
@@ -35,7 +48,8 @@
     visibility: hidden;
     min-width: 150px;
     transition: all 0.2s ease-in-out;
-    background-color: #0b0c1d;
+    background-color: #e4e3e9;
+    padding: 0;
   }
 
   .dropdown:hover > .dropdown-menu {
@@ -46,7 +60,20 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     transition: all 0.2s ease-in-out;
-    background-color: #0b0c1d;
+    background-color: #e4e3e9;
+    color: #202255;
+  }
+
+  .nav .dropdown-menu .menu-item a {
+    color: #202255 !important;
+  }
+
+  .nav .dropdown-menu .menu-item:hover a {
+    background-color: #202255;
+  }
+
+  .nav .dropdown-menu .menu-item:hover a {
+    color: #fff !important;
   }
 
   .mega-menu-parent.dropdown .dropdown-menu {
