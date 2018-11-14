@@ -15,7 +15,7 @@
 }
 
 .nav .menu-item a {
-  letter-spacing: 0.4px;
+  letter-spacing: 0.38px;
 }
 
 .nav .menu-item a:hover {
@@ -32,9 +32,15 @@
 }
 
 @media (min-width: 767px) {
+
+  ul.dropdown-menu.sub-menu.depth_1 {
+    left: 100%;
+    top: -10%;
+  }
+
   .dropdown > .dropdown-menu {
     position: absolute;
-    top: 0;
+    top: 2em;
     left: 0;
     z-index: 1000;
     float: none;
@@ -68,11 +74,8 @@
     color: #202255 !important;
   }
 
-  .nav .dropdown-menu .menu-item:hover a {
+  .nav .dropdown-menu .menu-item:hover > a {
     background-color: #202255;
-  }
-
-  .nav .dropdown-menu .menu-item:hover a {
     color: #fff !important;
   }
 
