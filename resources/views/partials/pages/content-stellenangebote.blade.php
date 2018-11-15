@@ -1,5 +1,8 @@
 <div class="row">
   <div class="col-12">
+    <h2 class="text-center big"><?= _e( "Stellenangebote", "sanlucar" ); ?></h2>
+  </div>
+  <div class="col-12">
     <h2><?= _e( "Stelle gesucht, Karriere gefunden", "sanlucar" ); ?></h2>
   </div>
   <div class="col-12">
