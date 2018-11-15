@@ -1,12 +1,12 @@
 <div class="row">
   <div class="col-12">
-    <h2 class="text-center big"><?php _e( "Arbeiten bei SanLucar", "sanlucar" ); ?></h2>
+    <h2 class="text-center big"><?= _e( "Arbeiten bei SanLucar", "sanlucar" ); ?></h2>
   </div>
   <div class="col-12">
-    <h2><?php _e( "Werde SanLucaner!", "sanlucar" ); ?></h2>
+    <h2><?= _e( "Werde SanLucaner!", "sanlucar" ); ?></h2>
   </div>
   <div class="col-12">
-    <p><?php _e( "Wir tragen keine Anzüge, duzen uns, sind eine multikulturelle bunte Truppe aus aller Welt, arbeiten gern im Team,
+    <p><?= _e( "Wir tragen keine Anzüge, duzen uns, sind eine multikulturelle bunte Truppe aus aller Welt, arbeiten gern im Team,
       mögen flache Hierarchien und lieben unser Obst und Gemüse.
       Wem das genauso gefällt, wie unsere Mission, Vision und Werte, dem ermöglichen wir Karrierewege in allen
       Abschnitten des Berufslebens - egal ob als erfahrene Fachkraft, Einsteiger oder Praktikant.
@@ -24,8 +24,9 @@
   <div class="row">
     <div class="col-12">
       <a href="#" class="page_button">
-        <h2><?php _e( "Werde SanLucaner!", "sanlucar" )?></h2>
+        <h2><?= _e( "Werde SanLucaner!", "sanlucar" )?></h2>
       </a>
     </div>
   </div>
 </section>
+
