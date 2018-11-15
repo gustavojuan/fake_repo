@@ -8,6 +8,7 @@
   <div class="col-12">
     <p><?= _e( "Genauso vielfältig wie unsere Produkte, sind bei uns die beruflichen Möglichkeiten:" ); ?></p>
   </div>
+  {{--todo: faltan los enlaces de los botones--}}
   {{--Buttons--}}
   <div class="col-8 offset-2 mb-2">
     <a href="#" class="page_button rounded_border">
