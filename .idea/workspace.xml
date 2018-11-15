@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee8b1954-39ae-4cc2-bdb2-f738c124847b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/styles/layouts/_pages.scss" afterPath="$PROJECT_DIR$/resources/assets/styles/layouts/_pages.scss" />
       <change beforePath="$PROJECT_DIR$/resources/assets/styles/menu.css" afterPath="$PROJECT_DIR$/resources/assets/styles/menu.css" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/content-frontpage.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/content-frontpage.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="menu.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/styles/menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="675">
+              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -38,8 +36,8 @@
       <file leaf-file-name="content-erde.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="266">
+              <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -48,8 +46,8 @@
       <file leaf-file-name="content-wasser.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
+            <state relative-caret-position="482">
+              <caret line="33" column="174" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="33" selection-end-column="174" />
               <folding />
             </state>
           </provider>
@@ -58,28 +56,18 @@
       <file leaf-file-name="content-luft.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="351">
+              <caret line="20" column="181" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="20" selection-end-column="181" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content-bildung.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content-bildung.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="149" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-ernaehrung.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="145" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="145" />
+            <state relative-caret-position="401">
+              <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -88,51 +76,19 @@
       <file leaf-file-name="content-sport.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="40" selection-end-column="6" />
+            <state relative-caret-position="482">
+              <caret line="41" column="174" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="41" selection-end-column="174" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="front-page.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/front-page.blade.php">
+      <file leaf-file-name="content-ernaehrung.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <marker date="1541670621002" expanded="true" signature="9:22" ph="..." />
-                <marker date="1541670621002" expanded="true" signature="33:42" ph="..." />
-                <marker date="1541670621002" expanded="true" signature="55:67" ph="..." />
-                <marker date="1541670621002" expanded="true" signature="74:84" ph="..." />
-                <marker date="1541670621002" expanded="true" signature="120:148" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content-frontpage.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/content-frontpage.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+            <state relative-caret-position="320">
+              <caret line="45" column="174" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="45" selection-end-column="174" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_pages.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_pages.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-              <folding>
-                <element signature="e#43#1479#0" expanded="false" />
-                <element signature="e#1633#2715#0" expanded="false" />
-                <element signature="e#1673#2430#0" expanded="false" />
-                <element signature="e#2732#2836#0" expanded="false" />
-                <element signature="e#2935#4293#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -210,13 +166,13 @@
         <option value="$PROJECT_DIR$/resources/views/partials/pages/content-d-r-e-a-m-s-programm.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/content-frontpage.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/styles/layouts/_pages.scss" />
-        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/styles/menu.css" />
+        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/styles/menu.css" />
+        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php" />
       </list>
     </option>
   </component>
@@ -282,18 +238,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
@@ -308,101 +258,13 @@
             <path>
               <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="maps" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bgs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="icons" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="maps" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="timeline" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="styles" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SanLucarTheme" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="SanLucarTheme" type="b2602c69:ProjectViewProjectNode" />
@@ -423,6 +285,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -535,26 +398,38 @@
       <workItem from="1541746716929" duration="4326000" />
       <workItem from="1541751957494" duration="14834000" />
       <workItem from="1542090492957" duration="52000" />
-      <workItem from="1542181403931" duration="14782000" />
+      <workItem from="1542181403931" duration="15883000" />
+      <workItem from="1542265326650" duration="2828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99086000" />
+    <option name="totallyTimeSpent" value="103015000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25500527" sideWeight="0.5021322" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.24637681" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.4057971" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="2265" y="154" width="1251" height="585" />
-      <window_info id="Terminal" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33635396" sideWeight="0.4978678" order="5" side_tool="false" content_ui="tabs" x="512" y="52" width="648" height="446" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.36710963" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33635396" sideWeight="0.4978678" order="5" side_tool="false" content_ui="tabs" x="512" y="52" width="648" height="446" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.7536232" order="0" side_tool="false" content_ui="combo" x="0" y="0" width="456" height="1040" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18283582" sideWeight="0.63289034" order="0" side_tool="false" content_ui="combo" x="0" y="0" width="456" height="1040" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -566,7 +441,6 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -790,13 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1161">
           <caret line="60" column="18" lean-forward="false" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding>
-            <element signature="e#588#700#0" expanded="false" />
-            <element signature="e#761#785#0" expanded="false" />
-            <element signature="e#795#912#0" expanded="false" />
-            <element signature="e#1244#1352#0" expanded="false" />
-            <element signature="e#1377#1736#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="80" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2646">
           <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -844,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" column="152" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="152" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="77" lean-forward="false" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,13 +721,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="111" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/styles/layouts/_pages.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="972">
           <caret line="267" column="0" lean-forward="false" selection-start-line="267" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
           <folding>
             <element signature="e#43#1479#0" expanded="false" />
@@ -882,23 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-141">
           <caret line="15" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="40" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,48 +761,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/content-frontpage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
+        <state relative-caret-position="918">
           <caret line="34" column="77" lean-forward="false" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="145" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="145" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="46" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/styles/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="675">
+          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-luft.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="20" column="181" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="20" selection-end-column="181" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-erde.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="83" lean-forward="false" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-wasser.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="33" column="174" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="33" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-sport.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="41" column="174" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="41" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-ernaehrung.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="45" column="174" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="45" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/pages/content-bildung.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
           <folding />
         </state>
       </provider>
