@@ -11,7 +11,6 @@
   <div class="col-12 text-center">
     <img src="<?=  get_template_directory_uri() . '/../dist/images/people/workers-6.jpg';?>" alt="">
   </div>
-  <div class="col-12"></div>
 </div>
 <section class="button-wrapper mt-3 text-center">
   <div class="row">
