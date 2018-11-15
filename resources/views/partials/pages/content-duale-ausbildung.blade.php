@@ -132,4 +132,4 @@ Du kannst deine Bewerbung zentral an die FEDA oder direkt an SanLucar senden.", 
 <div class="row text-center">
   <img style="border: 3px solid blue; border-radius: 100%" src="<?=  get_template_directory_uri() . '/../dist/images/img-lady-circle.png';?>" alt="">
 </div>
-
+s
