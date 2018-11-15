@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee8b1954-39ae-4cc2-bdb2-f738c124847b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/assets/images/icons/arbeiten.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/images/icons/cercled-people.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/images/icons/cv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/images/icons/dualfp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/images/icons/student.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-deine-karriere-bei-sanlucar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/pages/content-deine-karriere-bei-sanlucar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/pages/content-deine-karriere-bei-sanlucar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -371,12 +364,12 @@
       <workItem from="1542090492957" duration="52000" />
       <workItem from="1542181403931" duration="15883000" />
       <workItem from="1542265326650" duration="2828000" />
-      <workItem from="1542271177169" duration="4694000" />
+      <workItem from="1542271177169" duration="5273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107709000" />
+    <option name="totallyTimeSpent" value="108288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

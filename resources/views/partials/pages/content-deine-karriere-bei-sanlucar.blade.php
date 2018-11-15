@@ -29,7 +29,7 @@
     <div class="col-12 mt-4">
       <a href="#" class="page_button">
         <img src="<?=  get_template_directory_uri() . '/../dist/images/icons/cercled-people.png';  ?>" alt="">
-        <h2><?php _e( "Funktionsbereiche", "sanlucar" )?></h2>git
+        <h2><?php _e( "Funktionsbereiche", "sanlucar" )?></h2>
       </a>
     </div>
 
