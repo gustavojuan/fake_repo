@@ -83,4 +83,19 @@
     position: absolute;
     left: 0;
   }
+
+  #utilities_wrapper .dropdown > .dropdown-menu {
+    left: inherit;
+    width: auto;
+    min-width: auto;
+  }
+
+  #utilities_wrapper .dropdown > .dropdown-menu .dropdown-item {
+    overflow: hidden;
+    min-width: 144px;
+  }
+
+  #utilities_wrapper .dropdown > .dropdown-menu .dropdown-item span {
+    padding-top:5px;
+  }
 }

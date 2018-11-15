@@ -60,14 +60,24 @@
 
 			<?php
 			$languages = icl_get_languages('skip_missing=0&orderby=code');
+        /*    echo "<pre>";
+			var_dump($languages);
+			echo "</pre>";
+			exit;*/
 			$custom_languages = [];
 			foreach ($languages as  $l){
-				if(!$l['active']){
-					array_push($custom_languages,$l);
-				}else{
-					$custom_languages[0] = $l;
-				}
+				if($l['active']!=0) {
+					$custom_languages[] = $l;
+                }
 			}
+
+			foreach ($languages as  $l){
+				if($l['active']==0) {
+					array_push($custom_languages, $l);
+				}
+            }
+
+
 			?>
             <a class="dropdown-toggle text-uppercase" href="<?=$custom_languages[0]['url']?>" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?= substr($custom_languages[0]['native_name'],0,2)?>
@@ -75,10 +85,11 @@
 
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
 				<?php
+
 				foreach ($custom_languages as $key => $language){
 					if ($key > 0){
 
-						echo '<a class="dropdown-item" href="'.$language['url'].'">'.$language['native_name'].'<img class="ml-3 rounded-circle" src="'.$language['country_flag_url'].'" width="30" height="30"></a>';
+						echo '<a class="dropdown-item" href="'.$language['url'].'"><span class="float-left">'.$language['native_name'].'</span><img class="ml-3 rounded-circle float-right" src="'.$language['country_flag_url'].'" width="30" height="30"></a>';
 					}
 				}
 				?>
