@@ -1,5 +1,11 @@
 <div class="row">
   <div class="col-12">
+    <h2
+      class="text-center big"><?= _e( "Duale Ausbildung", "sanlucar" ); ?></h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
     <h2><?= _e( "Lehrjahre sind bei uns schöne Jahre", "sanlucar" ); ?></h2>
   </div>
   <div class="col-12">
