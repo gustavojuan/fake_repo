@@ -19,3 +19,48 @@
   background-color: #d4e8f1;
   max-height: 250px;
 }
+
+.border_bot {
+  border-bottom: 2px solid #202255;
+  padding-bottom: 50px;
+}
+
+.slide_img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 240px;
+}
+
+.carousel-indicators {
+  top: 109%;
+  bottom: 0;
+
+  li {
+    background-color: #797a99;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+  .active {
+    background-color: #202255;
+  }
+}
+
+.noticias_destacado {
+  h2 {
+    font-size: 25px !important;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+.img_single {
+  object-fit: contain;
+  object-position: center;
+  height: 240px;
+  width: 100%;
+}
