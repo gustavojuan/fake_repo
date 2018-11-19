@@ -1,4 +1,28 @@
 <header class="banner">
+        <ul class="social_links_header text-center m-0 p-0">
+            <li class="d-inline list-unstyled">
+                <a href="https://www.linkedin.com/company/sanlucar-fruit-s-l-/" target="_blank" class="social">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="d-inline list-unstyled">
+                <a href="https://www.facebook.com/sanlucarfruit/" target="_blank" class="social">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="d-inline list-unstyled">
+                <a href="https://www.youtube.com/user/SanLucar2009" target="_blank" class="social">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <li class="d-inline list-unstyled">
+                <a href="https://www.instagram.com/sanlucarfruit/" target="_blank" class="social">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+
     <nav class="navbar navbar-expand-lg">
         <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
           <?php

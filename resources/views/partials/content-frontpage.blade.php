@@ -46,7 +46,7 @@
                                 <div class="h-100 carousel-item <?php if($counter==0){echo "active";}?>">
                                     <div class="overlay-bg" style="background-image: url(<?php  the_post_thumbnail_url() ?>)"></div>
                                     <div class="overlay position-absolute">
-                                        <h2><?php the_title(); ?></h2>
+                                        <h2><?php echo mb_strimwidth(get_the_title(), 0, 25, '...'); ?></h2>
 
                                     </div>
                                 </div>

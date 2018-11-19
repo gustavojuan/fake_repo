@@ -188,6 +188,10 @@
     position: relative;
     overflow: hidden;
 
+    @media (max-width: $screen-md-max) {
+      height: 250px;
+    }
+
     .overlay-bg {
       position: absolute;
       left: 0;

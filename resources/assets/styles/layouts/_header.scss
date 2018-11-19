@@ -1,6 +1,43 @@
 header {
   position: relative;
 
+  a {
+    font-size: 14px;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .banner .nav a {
+    @extend .nav-link;
+  }
+
+  .nav {
+    &.navbar {
+      background-color: $brand-primary;
+    }
+
+    .menu-item {
+      a {
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      @media (max-width: $screen-sm-max) {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
   #search-button {
     top: 3px;
     position: relative;
@@ -22,55 +59,22 @@ header {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
-
-  a {
-    font-size: 14px;
-    color: #fff;
-
-    &:hover {
-      color: #fff;
-      text-decoration: none;
-    }
-  }
 }
 
 .banner .nav li {
   @extend .nav-item;
 }
 
-.banner .nav a {
-  @extend .nav-link;
-}
-
 .navbar {
   background-color: $brand-primary;
   height: 75px;
 
+  li {
+    padding: 0.5rem 1rem;
+  }
+
   @media (max-width: $screen-md-max) {
     height: auto;
-  }
-}
-
-.nav {
-  &.navbar {
-    background-color: $brand-primary;
-  }
-
-  .menu-item {
-    a {
-      color: #fff;
-      font-size: 11px;
-      text-transform: uppercase;
-
-      &:hover {
-        font-weight: bold;
-      }
-    }
-
-    @media (max-width: $screen-sm-max) {
-      width: 100%;
-      display: block;
-    }
   }
 }
 
@@ -123,4 +127,41 @@ header {
 .navbar .dropdown-menu li {
   width: 100%;
   margin-left: 0 !important;
+}
+
+.social_links_header {
+  margin-bottom: 15px !important;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 8;
+
+  .social {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+    > a {
+      color: $brand-primary;
+      font-size: 16px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    > i {
+      color: $brand-primary;
+      top: 6px;
+      position: relative;
+    }
+
+    i {
+      top: 6px;
+    }
+  }
 }

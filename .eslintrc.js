@@ -32,6 +32,7 @@ module.exports = {
     ]
   },
   "rules": {
+    "no-descending-specificity": null,
     "no-console": 0,
     "comma-dangle": [
       "error",
