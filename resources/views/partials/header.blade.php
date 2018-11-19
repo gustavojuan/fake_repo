@@ -44,12 +44,12 @@
     </nav>
 
     <div id="utilities_wrapper" >
-        <form class="navbar-form navbar-right navbar-form-search float-left mr-3" role="search">
+        <form class="navbar-form navbar-right navbar-form-search float-left mr-3" role="search" action="<?php echo home_url( '/' ); ?>">
             <div class="search-form-container hdn" id="search-input-container">
                 <div class="search-input-group">
                     <a class="close-button" id="hide-search-input-container"><i class="fa fa-times" aria-hidden="true"></i></a>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input type="text" class="form-control" placeholder="Search for..." name="s">
                     </div>
                 </div>
             </div>

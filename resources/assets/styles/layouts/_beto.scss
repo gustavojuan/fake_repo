@@ -7,14 +7,15 @@
   font-size: 18px !important;
 }
 
-.list_title {
-  font-size: 14px !important;
+.circled_border {
+  border: 3px solid #1c1d46;
+  border-radius: 100%;
 }
 
 .box_table {
+  padding-top: 1%;
   border: 2px solid #fff;
   display: block;
-  text-align: center;
   background-color: #d4e8f1;
   max-height: 250px;
 }
