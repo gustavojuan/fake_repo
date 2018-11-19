@@ -182,6 +182,10 @@
 
   @media (max-width: $screen-md-max) {
     height: auto;
+
+    .h-50 {
+      height: initial !important;
+    }
   }
 
   .overlay-wrapper {

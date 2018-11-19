@@ -31,6 +31,10 @@
   width: auto !important;
 }
 
+.nav .dropdown-menu .menu-item a {
+  color: #202255 !important;
+}
+
 @media (min-width: 767px) {
 
   ul.dropdown-menu.sub-menu.depth_1 {

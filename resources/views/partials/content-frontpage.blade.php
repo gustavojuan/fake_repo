@@ -1,12 +1,12 @@
 <div class="row" id="front-page">
-    <div class="col-12 col-md-6 position-relative overlay-wrapper pl-0 pr-0" id="dafur">
+    <div class="col-12 col-lg-6 position-relative overlay-wrapper pl-0 pr-0" id="dafur">
         <div class="overlay-bg" style="background-image: url(<?=  get_template_directory_uri() . '/../dist/images/front-page/hall.jpg';  ?>)"></div>
         <div class="overlay position-absolute">
             <h2><?=_e( "Dafür stehen wir" )?></h2>
             <h3><?= _e(">> Der Welt natürliche Lebensfreude und Gesundheit zu bringen <<")?></h3>
         </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-lg-6">
         <div class="row h-50" style="overflow: hidden;">
             <div class="col-12 position-relative overlay-wrapper pl-0 pr-0">
                 <div class="overlay-bg" style="background-image: url(<?=  get_template_directory_uri() . '/../dist/images/front-page/family.jpg';  ?>)"></div>

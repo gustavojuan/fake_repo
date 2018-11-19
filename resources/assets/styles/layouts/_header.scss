@@ -164,4 +164,8 @@ header {
       top: 6px;
     }
   }
+
+  @media (max-width: $screen-md-max) {
+    display: none;
+  }
 }
