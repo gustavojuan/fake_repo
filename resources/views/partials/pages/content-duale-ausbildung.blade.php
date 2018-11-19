@@ -10,10 +10,10 @@
   </div>
   <div class="col-12">
     <p>
-      Wer von der Pike auf alles über das Obst und Gemüse Geschäft lernen möchte, kann bei uns eine Ausbildung zum
+      <?= _e( "Wer von der Pike auf alles über das Obst und Gemüse Geschäft lernen möchte, kann bei uns eine Ausbildung zum
       Kaufmann (m/w) im Groß- und Außenhandel machen.
       Die Ausbildung kannst du sowohl in unserem Headquarter im sonnigen Valencia (Spanien) als auch bei SanLucar in
-      Ettlingen (Deutschland) machen, dabei lernst du alle Arbeitsprozesse von der Ernte bis zum Verkauf kennen.
+      Ettlingen (Deutschland) machen, dabei lernst du alle Arbeitsprozesse von der Ernte bis zum Verkauf kennen.", "sanlucar" ); ?>
     </p>
   </div>
   <div class="col-12">
