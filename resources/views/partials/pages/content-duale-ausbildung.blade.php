@@ -11,12 +11,12 @@
   <div class="col-12">
     <p>
       <?= _e( "Wer von der Pike auf alles über das Obst und Gemüse Geschäft lernen möchte, kann bei uns eine Ausbildung zum
-      Kaufmann (m/w) im Groß- und Außenhandel machen.
-      Die Ausbildung kannst du sowohl in unserem Headquarter im sonnigen Valencia (Spanien) als auch bei SanLucar in
+      Kaufmann (m/w) im Groß- und Außenhandel machen.", "sanlucar" ); ?></p>
+    <p><?= _e( "Die Ausbildung kannst du sowohl in unserem Headquarter im sonnigen Valencia (Spanien) als auch bei SanLucar in
       Ettlingen (Deutschland) machen, dabei lernst du alle Arbeitsprozesse von der Ernte bis zum Verkauf kennen.", "sanlucar" ); ?>
     </p>
   </div>
-  <div class="col-12">
+  <div class="col-12 mt-2">
     <h3><?= _e( "Dein Profil:", "sanlucar" ); ?></h3>
     <ul>
       <li><p class="mb-0"><?= _e( "Mindestens mittlere Reife für die Ausbildung in Deutschland/ Abitur oder Fachabitur für die
@@ -34,7 +34,7 @@
       <li><p class="mb-0"><?= _e( "Du liebst Obst und Geyarn startmüse", "sanlucar" ); ?></p></li>
     </ul>
   </div>
-  <div class="col-12">
+  <div class="col-12 mt-2">
     <h3><?= _e( "Wir bieten:", "sanlucar" ); ?></h3>
     <ul>
       <li><p class="mb-0"><?= _e( "Vielfältige Aufgaben und Verantwortung ab dem ersten Tag", "sanlucar" ); ?></p></li>
@@ -91,7 +91,7 @@
 <div class="row mt-3">
   <div class="col-4 offset-4">
     <a href="#" class="page_button">
-      <h2 class="button_big mb-1"><?= _e( "Bewirb dich jetzt!", "sanlucar" )?></h2>
+      <h2 class="button_big mb-3 rounded_border"><?= _e( "Bewirb dich jetzt!", "sanlucar" )?></h2>
     </a>
   </div>
 </div>
@@ -134,7 +134,7 @@ Du kannst deine Bewerbung zentral an die FEDA oder direkt an SanLucar senden.", 
 <div class="row mt-3">
   <div class="col-4 offset-4 text-center">
     <a href="#" class="page_button">
-      <h2 class="button_big text-center"><?= _e( "Bewirb dich jetzt!", "sanlucar" )?></h2>
+      <h2 class="button_big text-center mb-3 rounded_border"><?= _e( "Bewirb dich jetzt!", "sanlucar" )?></h2>
     </a>
   </div>
 </div>
@@ -184,8 +184,8 @@ Du kannst deine Bewerbung zentral an die FEDA oder direkt an SanLucar senden.", 
 </div>
 <div class="row mt-3">
   <div class="col-12">
-    <p><a style="font-size: 12px"
-          href=""><?= _e( "Hier", "sanlucar" )?></a> <?= _e( "findest du mehr über Heikes Ausbildung in Spanien heraus!", "sanlucar" )?>
+    <p><a style="font-size: 12px" target="_blank"
+          href="http://go-ibs.de/ab-insausland/abenteurer-unterwegs/zur-ausbildung-nach-spanien"><?= _e( "Hier", "sanlucar" )?></a> <?= _e( "findest du mehr über Heikes Ausbildung in Spanien heraus!", "sanlucar" )?>
     </p>
   </div>
 </div>
@@ -197,20 +197,10 @@ Du kannst deine Bewerbung zentral an die FEDA oder direkt an SanLucar senden.", 
         <img src="<?=  get_template_directory_uri() . '/../dist/images/logos/ahk.jpg';?>" alt="">
       </div>
       <div class="col-6">
-        <h3>Deutsvda klmda mkmsssas</h3>
-        <p>jjksoroens solsaoe dpd</p>
+        <h3><?php _e("Deutsche Handelskammer für Spanien","sanlucar"); ?></h3>
+        <p><?php _e("Cámara de Comercio Alemana para España","sanlucar"); ?></p>
       </div>
     </div>
   </div>
-  <div class="col-3 offset-3">
-    <div class="row">
-      <div class="col-6">
-        <img src="<?=  get_template_directory_uri() . '/../dist/images/logos/feda.jpg';?>" alt="">
-      </div>
-      <div class="col-6">
-        <h3>adasdadasdewas</h3>
-        <p>adsaewasdafewsdadxa</p>
-      </div>
-    </div>
-  </div>
+
 </div>

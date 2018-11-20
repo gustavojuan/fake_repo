@@ -1,8 +1,10 @@
 <?php
+$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 $args = array(
   'orderby'        => 'date',
   'post_type'      => 'post',
-  'posts_per_page' => '6'
+  'posts_per_page' => '6',
+  'paged'          => $paged
 );
 $the_query = new WP_Query( $args );
 $post_count = wp_count_posts()->publish;
@@ -33,7 +35,7 @@ $post_count = wp_count_posts()->publish;
           </div>
           <div class="col-12 col-md-6">
             <h2><?= the_title()?></h2>
-            <p><?php the_excerpt(7 )?></p>
+            <p><?php echo custom_short_excerpt_177( get_the_excerpt() )?></p>
             <a href="<?php get_post_permalink() ?>"><?php _e( "Mehr lesen", "sanlucar" )?></a>
           </div>
         </div>
@@ -63,24 +65,28 @@ $post_count = wp_count_posts()->publish;
     </a>
   </div>
 </div>
-<h3><?php _e( "SanLucar News", "sanlucar" );?></h3>
-
+<h2 class="mt-3 mb-2 brand_color"><?php _e( "SanLucar News", "sanlucar" );?></h2>
 <div class="row">
   <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-  <div class="col-12 col-md-4">
+  <div class="col-12 col-md-4 single_card">
     <div>
-      <img src="<?php  the_post_thumbnail_url() ?>" class="slide_img" alt="">
+      <img src="<?php  the_post_thumbnail_url() ?>" class="slide_img mb-2" alt="">
     </div>
-    <h2><?php get_the_title()?></h2>
-    <p class="border_bot"><?php echo get_the_excerpt(8)?></p>
-    <p><?php the_date() ?></p>
+    <h2><?= get_the_title()?></h2>
+    <p class="border_bot"><?php echo custom_short_excerpt_79( get_the_excerpt() ) ?></p>
+    <p class="text-right"><?php echo get_the_date( "d.m.Y" )?></p>
   </div>
 
   <?php endwhile; ?>
 <!-- end of the loop -->
 
   <!-- pagination here -->
+    <div class="col-4">
+      <a href="">Alles ansehen <img class=""
+                                    src="<?=  get_template_directory_uri() . '/../dist/images/icons/next.png';?>" alt=""></a>
+    </div>
 
   <?php wp_reset_postdata(); ?>
 </div>
+
 

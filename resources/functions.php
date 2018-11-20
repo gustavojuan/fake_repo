@@ -90,3 +90,13 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+function custom_short_excerpt_79($excerpt){
+    return substr($excerpt, 0, 80).'...';
+}
+add_filter('the_excerpt', 'custom_short_excerpt');
+
+function custom_short_excerpt_177($excerpt){
+    return substr($excerpt, 0, 177).'...';
+}
+add_filter('the_excerpt', 'custom_short_excerpt');

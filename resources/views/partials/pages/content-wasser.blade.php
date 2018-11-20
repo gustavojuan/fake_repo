@@ -23,15 +23,14 @@
     </div>
 </div>
 <div class="row" id="dreams_buttons">
-    <div class="col-12 text-center">
-        <ul class="list-unstyled">
-            <!-- TODO -->
-            <li class="d-inline-block"><a href="."><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/bildung.png';  ?>" alt=""></a></li>
-            <li class="d-inline-block"><a href="."><img  class="dream_button " src="<?=  get_template_directory_uri() . '/../dist/images/icons/ernahrung.png';  ?>" alt=""></a></li>
-            <li class="d-inline-block"><a href="."><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/sport.png';  ?>" alt=""></a></li>
-            <li class="d-inline-block"><a href="."><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/erde.png';  ?>" alt=""></a></li>
-            <li class="d-inline-block"><a href="."><img  class="dream_button active" src="<?=  get_template_directory_uri() . '/../dist/images/icons/wasser.png';  ?>" alt=""></a></li>
-            <li class="d-inline-block"><a href="."><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/luft.png';  ?>" alt=""></a></li>
-        </ul>
-    </div>
+  <div class="col-12 text-center">
+    <ul class="list-unstyled">
+      <li class="d-inline-block"><a href="/bildung"><img  class="dream_button active" src="<?=  get_template_directory_uri() . '/../dist/images/icons/bildung.png';  ?>" alt=""></a></li>
+      <li class="d-inline-block"><a href="/ernaehrung"><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/ernahrung.png';  ?>" alt=""></a></li>
+      <li class="d-inline-block"><a href="/sport"><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/sport.png';  ?>" alt=""></a></li>
+      <li class="d-inline-block"><a href="/erde"><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/erde.png';  ?>" alt=""></a></li>
+      <li class="d-inline-block"><a href="/wasser"><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/wasser.png';  ?>" alt=""></a></li>
+      <li class="d-inline-block"><a href="/luft"><img  class="dream_button" src="<?=  get_template_directory_uri() . '/../dist/images/icons/luft.png';  ?>" alt=""></a></li>
+    </ul>
+  </div>
 </div>

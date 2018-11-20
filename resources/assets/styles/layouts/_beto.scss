@@ -22,7 +22,7 @@
 
 .border_bot {
   border-bottom: 2px solid #202255;
-  padding-bottom: 50px;
+  padding-bottom: 8%;
 }
 
 .slide_img {
@@ -50,7 +50,7 @@
 
 .noticias_destacado {
   h2 {
-    font-size: 25px !important;
+    font-size: 18px !important;
   }
 
   a {
@@ -63,4 +63,12 @@
   object-position: center;
   height: 240px;
   width: 100%;
+}
+
+.brand_color {
+  color: #202255;
+}
+
+.single_card {
+  height: 500px;
 }
