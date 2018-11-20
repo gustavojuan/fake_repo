@@ -22,9 +22,9 @@
 </div>
 <section class="button-wrapper mt-3 text-center">
   <div class="row">
-    <div class="col-12">
+    <div class="col-4 offset-4">
       <a href="#" class="page_button">
-        <h2><?= _e( "Werde SanLucaner!", "sanlucar" )?></h2>
+        <h2 class="button_big"><?= _e( "Werde SanLucaner!", "sanlucar" )?></h2>
       </a>
     </div>
   </div>

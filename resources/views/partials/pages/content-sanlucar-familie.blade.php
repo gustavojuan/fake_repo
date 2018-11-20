@@ -62,7 +62,7 @@
             <div class="col-12 col-md-8 ">
                 <h3><?php _e( "Fresaflor", "sanlucar" ) ?></h3>
                 <p><?php _e( "SanLucar wäre ohne Fresaflor nicht SanLucar. Schon seit den Anfängen sind Sebastian Morcelo und die Kooperative Fresaflor Anbaupartner für Erdbeeren, Him- und Heidelbeeren, von denen die Welt spricht. Im andalusischen Huelva gedeihen die Früchte unter anderem auf Hochtischen, so dass der Verbrauch an Mineralien und Wasser exakt gesteuert werden kann. Durch Hochtunnel sind die Pflanzen vor Regen und Wind geschützt, es gibt ein Programm zum Schutz der Bienen und Testfelder auf denen wir nach neuen Beeren-Sorten forschen. Mehr über Sebastian und Fresaflor:", "sanlucar" ) ?></p>
-                <p><a href="http://www.sanlucar/früchte/beeren" target="_blank">www.sanlucar/früchte/beeren</a></p>
+                <p><a href="http://www.sanlucar.com/früchte/beeren" target="_blank">www.sanlucar/früchte/beeren</a></p>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@
             <div class="col-12 col-md-8">
                 <h3><?php _e("Stephan Rötzer, Gründer und Inhaber", "sanlucar") ?></h3>
                 <p><?php _e("Dem Sohn eines Münchener Obst-und Gemüsehändlers wurde die Leidenschaft zu bestem Obst und Gemüse mit in die Wiege gelegt. Schon früh hat er sich dann in das Land Spanien und Zitrusfrüchte verliebt und deswegen SanLucar 1993 in Valencia gegründet. Seitdem verwirklicht er tagtäglich seinen Traum, Menschen die besten Früchte aus aller Welt anzubieten. In herausragenden Meisteranbauern hat er zuverlässige Partner gefunden, die ihm helfen seine Vision von besonderem Obst und Gemüse umzusetzen. So ist es kein Wunder, dass SanLucar heute eine große, internationale Marke mit gutem Renomee ist. Aus dem Tagesgeschäft hat er sich mittlerweile zurückgezogen, um sich auf die Weiterentwicklung der Produkte und Marke konzentrieren zu können.", "sanlucar") ?></p>
-                <p><blockquote><?php _e("\"Mich faszinieren Früchte und die Dynamik des Geschäfts stets aufs Neue. Und ich bin glücklich, dass ich meine Leidenschaft auf vielen Reisen durch die Welt ausleben kann.\"", "sanlucar")?></blockquote></p>
+                <em><blockquote><?php _e("\"Mich faszinieren Früchte und die Dynamik des Geschäfts stets aufs Neue. Und ich bin glücklich, dass ich meine Leidenschaft auf vielen Reisen durch die Welt ausleben kann.\"", "sanlucar")?></blockquote></em>
             </div>
         </div>
     </div>
