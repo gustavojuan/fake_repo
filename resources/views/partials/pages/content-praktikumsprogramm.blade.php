@@ -30,7 +30,7 @@
   <div class="col-12 col-md-3 text-center">
     <img class="circled_border" src="<?=  get_template_directory_uri() . '/../dist/images/greta.png';?>"
          alt="">
-    <h3><?= _e( "Greta Reers", "sanlucar" ); ?></h3>
+    <h3 class="mt-3"><?= _e( "Greta Reers", "sanlucar" ); ?></h3>
     <p><?= _e( "Praktikantin im Einkauf", "sanlucar" ); ?></p>
   </div>
   <div class="col-12 col-md-9">
@@ -41,7 +41,7 @@
   <div class="col-12 col-md-3 text-center">
     <img class="circled_border" src="<?=  get_template_directory_uri() . '/../dist/images/elisa.png';?>"
          alt="">
-    <h3><?= _e( "Elisa Nickel", "sanlucar" ); ?></h3>
+    <h3 class="mt-3"><?= _e( "Elisa Nickel", "sanlucar" ); ?></h3>
     <p class="mb-1"><?= _e( "Praktikantin in der", "sanlucar" ); ?></p>
     <p><?= _e( "Personalabteilung ", "sanlucar" ); ?></p>
   </div>

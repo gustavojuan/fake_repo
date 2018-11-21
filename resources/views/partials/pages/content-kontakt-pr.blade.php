@@ -13,8 +13,8 @@
     <img src="<?=  get_template_directory_uri() . '/../dist/images/icons/profile.png';?>" alt="">
   </div>
   <div class="col-12 col-md-10 mt-4">
-    <p class="mb-1"><?= _e( "Unternehmens-Kommunikation: Jennifer Heer-Stephan", "sanlucar" ); ?></p>
-    <a href="" target="_blank">Tel. (+49) 7243 525 4 – 0. Durchwahl: -1104</a>
+    <p class="mb-1 d-block"><?= _e( "Unternehmens-Kommunikation: Jennifer Heer-Stephan", "sanlucar" ); ?></p>
+    <a href="" class="d-block" target="_blank">Tel. (+49) 7243 525 4 – 0. Durchwahl: -1104</a>
     <a href="mailto:jennifer.heer@sanlucar.com" target="_blank">jennifer.heer@sanlucar.com</a>
   </div>
 </div>
@@ -24,7 +24,7 @@
   </div>
   <div class="col-12 col-md-10 mt-4">
     <p class="mb-1"><?= _e( "Marken-Kommunikation: Nuria Pizan", "sanlucar" ); ?></p>
-    <a href="tel:+497243 5254 2242" target="_blank">Tel. (+49) 7243 5254 2242</a>
+    <a href="tel:7243 5254 2242" class="d-block" target="_blank">Tel. (+49) 7243 5254 2242</a>
     <a href="mailto:hr.germany@sanlucar.com" target="_blank">nuria.pizan@sanlucar.com</a>
   </div>
 </div>
@@ -39,7 +39,7 @@
   </div>
   <div class="col-12 col-md-10 mt-4">
     <p class="mb-1"><?= _e( "Georg Wernicke", "sanlucar" ); ?></p>
-    <a href="" target="_blank">Tel. (+43) 2254 20 63 – 0. Durchwahl: -133</a>
+    <a href="" class="d-block" target="_blank">Tel. (+43) 2254 20 63 – 0. Durchwahl: -133</a>
     <a href="mailto:g.wernicke@sanlucar.at" target="_blank">g.wernicke@sanlucar.at</a>
   </div>
 </div>
@@ -53,7 +53,7 @@
   </div>
   <div class="col-12 col-md-10 mt-4">
     <p class="mb-1"><?= _e( "Sonia Gabarda", "sanlucar" ); ?></p>
-    <a href="tel:" target="_blank">Tel. (+34) 96 142 40 4 – 0. Durchwahl: -2410</a>
+    <a href="tel:" target="_blank" class="d-block">Tel. (+34) 96 142 40 4 – 0. Durchwahl: -2410</a>
     <a href="mailto:sonia.gabarda@sanlucar.com" target="_blank">sonia.gabarda@sanlucar.com</a>
   </div>
 </div>
