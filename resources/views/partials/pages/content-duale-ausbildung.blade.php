@@ -185,22 +185,21 @@ Du kannst deine Bewerbung zentral an die FEDA oder direkt an SanLucar senden.", 
 <div class="row mt-3">
   <div class="col-12">
     <p><a style="font-size: 12px" target="_blank"
-          href="http://go-ibs.de/ab-insausland/abenteurer-unterwegs/zur-ausbildung-nach-spanien"><?= _e( "Hier", "sanlucar" )?></a> <?= _e( "findest du mehr über Heikes Ausbildung in Spanien heraus!", "sanlucar" )?>
+          href="https://www.go-ibs.de/ab-ins-ausland/abenteurer-unterwegs/zur-ausbildung-nach-spanien/"><?= _e( "Hier", "sanlucar" )?></a> <?= _e( "findest du mehr über Heikes Ausbildung in Spanien heraus!", "sanlucar" )?>
     </p>
   </div>
 </div>
 
 <div class="row mt-5">
-  <div class="col-5">
-    <div class="row">
-      <div class="col-6">
-        <img src="<?=  get_template_directory_uri() . '/../dist/images/logos/ahk.jpg';?>" alt="">
-      </div>
-      <div class="col-6">
-        <h3><?php _e("Deutsche Handelskammer für Spanien","sanlucar"); ?></h3>
-        <p><?php _e("Cámara de Comercio Alemana para España","sanlucar"); ?></p>
-      </div>
-    </div>
+  <div class="col col-md-4">
+    <a href="https://www.ahk.es/es/" target="_blank">
+      <img src="<?=  get_template_directory_uri() . '/../dist/images/logos/ahk.jpg';?>" alt="">
+    </a>
   </div>
 
+  <div class="col col-md-4 offset-4">
+    <a href="http://www.feda-business-school.com/es/" target="_blank">
+      <img src="<?=  get_template_directory_uri() . '/../dist/images/logos/feda.jpg';?>" alt="">
+    </a>
+  </div>
 </div>

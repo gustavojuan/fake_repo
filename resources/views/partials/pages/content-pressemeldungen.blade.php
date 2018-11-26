@@ -81,10 +81,14 @@ $post_count = wp_count_posts()->publish;
 <!-- end of the loop -->
 
   <!-- pagination here -->
-    <div class="col-4">
-      <a href="">Alles ansehen <img class=""
-                                    src="<?=  get_template_directory_uri() . '/../dist/images/icons/next.png';?>" alt=""></a>
-    </div>
+  <?php /*previous_posts_link( 'Previous', $the_query->max_num_pages ) */?>
+
+  <div class="col-4">
+    <?php
+    /*$next_string = _e( "Alles ansehen", "sanlucar" );*/
+    next_posts_link( "Alles ansehen", $the_query->max_num_pages ) ?>
+    <img class="" src="<?=  get_template_directory_uri() . '/../dist/images/icons/next.png';?>" alt="">
+  </div>
 
   <?php wp_reset_postdata(); ?>
 </div>
